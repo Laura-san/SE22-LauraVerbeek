@@ -5,6 +5,11 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Create an account</title>
+    <style type="text/css">
+        #form1 {
+            height: 281px;
+        }
+    </style>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -30,6 +35,8 @@
                 <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
                 <StaticSelectedStyle BackColor="#5D7B9D" />
             </asp:Menu>
+            <asp:Button ID="btn_AddMovie" runat="server" Text="Add a Movie" Width="117px" />
+            <asp:Button ID="btn_AddActor" runat="server" Text="Add a Actor" Width="117px" />
         </div>
         </div>
 
@@ -53,7 +60,7 @@
                     <asp:Label ID="lblMail" runat="server" Text="Email:"></asp:Label>
                 </div>
                 </div>
-                <div id="textbox" style="float:left; width: 100px;">
+                <div id="textbox" style="float:left; width: 128px;">
                     <asp:TextBox ID="tbUsername" runat="server"></asp:TextBox>
                     <asp:TextBox ID="tbPassword" runat="server"></asp:TextBox>
                     <asp:TextBox ID="tbName" runat="server"></asp:TextBox>

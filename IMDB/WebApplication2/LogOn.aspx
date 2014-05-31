@@ -5,6 +5,11 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Log On</title>
+    <style type="text/css">
+        #form1 {
+            height: 282px;
+        }
+    </style>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -30,6 +35,8 @@
                 <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
                 <StaticSelectedStyle BackColor="#5D7B9D" />
             </asp:Menu>
+            <asp:Button ID="btn_AddMovie" runat="server" Text="Add a Movie" Width="117px" />
+            <asp:Button ID="btn_AddActor" runat="server" Text="Add a Actor" Width="117px" />
         </div>
         </div>
 

@@ -10,3 +10,9 @@ D:\Desktop\SE ontwikkelopdracht\WebApplication2\WebApplication2\bin\WebApplicati
 D:\Desktop\SE ontwikkelopdracht\WebApplication2\WebApplication2\obj\Debug\IMDB.csprojResolveAssemblyReference.cache
 D:\Desktop\SE ontwikkelopdracht\WebApplication2\WebApplication2\obj\Debug\WebApplication2.dll
 D:\Desktop\SE ontwikkelopdracht\WebApplication2\WebApplication2\obj\Debug\WebApplication2.pdb
+D:\Desktop\SE ontwikkelopdracht\IMDB\WebApplication2\bin\WebApplication2.dll.config
+D:\Desktop\SE ontwikkelopdracht\IMDB\WebApplication2\bin\WebApplication2.dll
+D:\Desktop\SE ontwikkelopdracht\IMDB\WebApplication2\bin\WebApplication2.pdb
+D:\Desktop\SE ontwikkelopdracht\IMDB\WebApplication2\obj\Debug\IMDB.csprojResolveAssemblyReference.cache
+D:\Desktop\SE ontwikkelopdracht\IMDB\WebApplication2\obj\Debug\WebApplication2.dll
+D:\Desktop\SE ontwikkelopdracht\IMDB\WebApplication2\obj\Debug\WebApplication2.pdb

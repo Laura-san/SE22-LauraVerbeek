@@ -30,6 +30,8 @@
                 <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
                 <StaticSelectedStyle BackColor="#5D7B9D" />
             </asp:Menu>
+            <asp:Button ID="btn_AddMovie" runat="server" Text="Add a Movie" Width="117px" />
+            <asp:Button ID="btn_AddActor" runat="server" Text="Add a Actor" Width="117px" />
         </div>
         </div>
 

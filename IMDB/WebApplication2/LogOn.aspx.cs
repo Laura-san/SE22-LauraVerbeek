@@ -11,7 +11,9 @@ namespace WebApplication2
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            btn_logon.Enabled = false;
+            btn_AddActor.Visible = false;
+            btn_AddMovie.Visible = false;
         }
     }
 }
