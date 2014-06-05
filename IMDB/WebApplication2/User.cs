@@ -34,5 +34,16 @@ namespace WebApplication2
             this.email = email;
             this.memberLetter = letter;
         }
+
+        public User(string email, bool letter)
+        {
+            this.email = email;
+            this.memberLetter = letter;
+        }
+
+        public User()
+        {
+
+        }
     }
 }

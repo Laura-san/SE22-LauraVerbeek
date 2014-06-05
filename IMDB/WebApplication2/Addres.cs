@@ -7,20 +7,12 @@ namespace WebApplication2
 {
     public class Addres
     {
-        private string street;
+        private string postcode;
 
-        public string Street
+        public string Postcode
         {
-            get { return street; }
-            set { street = value; }
-        }
-
-        private string number;
-
-        public string Number
-        {
-            get { return number; }
-            set { number = value; }
+            get { return postcode; }
+            set { postcode = value; }
         }
 
         private string place;
@@ -31,11 +23,10 @@ namespace WebApplication2
             set { place = value; }
         }
 
-        public Addres(string street, string number, string place)
+        public Addres(string postcode, string place)
         {
-            this.street = street;
+            this.postcode = postcode;
             this.place = place;
-            this.number = number;
         }
         
     }

@@ -44,6 +44,13 @@ namespace WebApplication2
             this.addres = addres;
         }
 
+        public Employee(DateTime hiredSince, double salaris, Addres addres)
+        {
+            this.hiredSince = hiredSince;
+            this.salaris = salaris;
+            this.addres = addres;
+        }
+
         public bool CreateMovie(string title, DateTime releaseDate, string description, EnumGenre genre, Movie movie, string age, bool sex, bool violence, bool fear, bool discrimination, bool drugsAlcoholAbuse)
         {
             return true;
