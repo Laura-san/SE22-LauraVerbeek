@@ -39,9 +39,9 @@ namespace WebApplication2
             set { dateOfBirth = value; }
         }
 
-        List<Movie> Filmography = new List<Movie>();
+        public List<string> Filmography = new List<string>();
 
-        public Actor(int actorid, string name, string biography, DateTime dob, List<Movie> Filmography)
+        public Actor(int actorid, string name, string biography, DateTime dob, List<string> Filmography)
         {
             this.actorID = actorid;
             this.name = name;
@@ -49,12 +49,19 @@ namespace WebApplication2
             this.Filmography = Filmography;
         }
 
+        public Actor(int actorid, string name, string biography, DateTime dob)
+        {
+            this.actorID = actorid;
+            this.name = name;
+            this.biography = biography;
+        }
+
         public void ChangeActor(Actor actor, string changedValue)
         {
 
         }
 
-        public List<Movie> ViewFilmography (Actor actor)
+        public List<string> ViewFilmography (Actor actor)
         {
             return actor.Filmography;
         }

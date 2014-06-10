@@ -55,6 +55,15 @@ namespace WebApplication2
             set { dateOfBirth = value; }
         }
 
+        private string soort;
+
+        public string Soort
+        {
+            get { return soort; }
+            set { soort = value; }
+        }
+        
+
         public bool changePassword(string newPassword)
         {
             password = newPassword;

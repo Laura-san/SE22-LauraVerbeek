@@ -31,7 +31,7 @@ namespace WebApplication2
             set { addres = value; }
         }
 
-        public Employee(int accountid, string username, string password, string firstName, string lastName, DateTime dob, DateTime hiredSince, double salaris, Addres addres)
+        public Employee(int accountid, string username, string password, string firstName, string lastName, DateTime dob, DateTime hiredSince, double salaris, Addres addres, string soort)
         {
             base.AccountID = accountid;
             base.Username = username;
@@ -39,16 +39,18 @@ namespace WebApplication2
             base.FirstName = firstName;
             base.LastName = lastName;
             base.DateOfBirth = dob;
+            base.Soort = soort;
             this.hiredSince = hiredSince;
             this.salaris = salaris;
             this.addres = addres;
         }
 
-        public Employee(DateTime hiredSince, double salaris, Addres addres)
+        public Employee(DateTime hiredSince, double salaris, Addres addres,string soort)
         {
             this.hiredSince = hiredSince;
             this.salaris = salaris;
             this.addres = addres;
+            base.Soort = soort;
         }
 
         public bool CreateMovie(string title, DateTime releaseDate, string description, EnumGenre genre, Movie movie, string age, bool sex, bool violence, bool fear, bool discrimination, bool drugsAlcoholAbuse)

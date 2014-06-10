@@ -130,6 +130,11 @@ namespace WebApplication2
             this.drugsAlcoholAbuse = drugsAlcoholAbuse;
         }
 
+        public Movie()
+        {
+
+        }
+
         public bool AddReview(Review review)
         {
             Reviews.Add(review);

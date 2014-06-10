@@ -59,6 +59,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Actors.aspx" />
+    <Content Include="AddActor.aspx" />
+    <Content Include="AddMovie.aspx" />
+    <Content Include="AddReview.aspx" />
+    <Content Include="AddToFilmography.aspx" />
     <Content Include="Content\images\ajax-loader.gif" />
     <Content Include="Content\images\ajax-loader.png" />
     <Content Include="Content\images\icons-18-black.png" />
@@ -356,6 +360,7 @@
     <Content Include="Movies.aspx" />
     <Content Include="Pictures\movies.jpg" />
     <Content Include="packages.config" />
+    <None Include="Properties\PublishProfiles\adfadf.pubxml" />
     <None Include="Scripts\jquery-2.1.1.intellisense.js" />
     <Content Include="Scripts\jquery-2.1.1.js" />
     <Content Include="Scripts\jquery-2.1.1.min.js" />
@@ -375,6 +380,8 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\typings\jquery\jquery.d.ts" />
     <Content Include="startpage.aspx" />
+    <Content Include="ViewActor.aspx" />
+    <Content Include="ViewMovie.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -387,7 +394,35 @@
     <Compile Include="Actors.aspx.designer.cs">
       <DependentUpon>Actors.aspx</DependentUpon>
     </Compile>
+    <Compile Include="AddActor.aspx.cs">
+      <DependentUpon>AddActor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddActor.aspx.designer.cs">
+      <DependentUpon>AddActor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddMovie.aspx.cs">
+      <DependentUpon>AddMovie.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddMovie.aspx.designer.cs">
+      <DependentUpon>AddMovie.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Addres.cs" />
+    <Compile Include="AddReview.aspx.cs">
+      <DependentUpon>AddReview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddReview.aspx.designer.cs">
+      <DependentUpon>AddReview.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddToFilmography.aspx.cs">
+      <DependentUpon>AddToFilmography.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddToFilmography.aspx.designer.cs">
+      <DependentUpon>AddToFilmography.aspx</DependentUpon>
+    </Compile>
     <Compile Include="CreateAccount.aspx.cs">
       <DependentUpon>CreateAccount.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -431,6 +466,20 @@
       <DependentUpon>startpage.aspx</DependentUpon>
     </Compile>
     <Compile Include="User.cs" />
+    <Compile Include="ViewActor.aspx.cs">
+      <DependentUpon>ViewActor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewActor.aspx.designer.cs">
+      <DependentUpon>ViewActor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewMovie.aspx.cs">
+      <DependentUpon>ViewMovie.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewMovie.aspx.designer.cs">
+      <DependentUpon>ViewMovie.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="ClassDiagram1.cd" />

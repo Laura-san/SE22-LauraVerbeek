@@ -1,0 +1,253 @@
+
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>
+
+</title>
+    <style type="text/css">
+        #form1 {
+            height: 310px;
+        }
+    </style>
+<style type="text/css">
+	/* <![CDATA[ */
+	#Menu1 { background-color:#F7F6F3; }
+	#Menu1 img.icon { border-style:none;vertical-align:middle; }
+	#Menu1 img.separator { border-style:none;display:block; }
+	#Menu1 ul { list-style:none;margin:0;padding:0;width:auto; }
+	#Menu1 ul.dynamic { background-color:#F7F6F3;z-index:1;margin-left:2px; }
+	#Menu1 a { color:#7C6F57;font-family:Verdana;font-size:1em;text-decoration:none;white-space:nowrap;display:block; }
+	#Menu1 a.static { padding:2px 5px 2px 5px;text-decoration:none; }
+	#Menu1 a.popout { background-image:url("/WebResource.axd?d=YAYach_zykzn7tRotFpEUqeV9lD6pcXBpI0tnUkwx6HCX4AnYIFbhKQwoOjA3GOeqTlfpj4fxGBNz_gfJxtQhh6NCZWPy5-Tm40qH0kMTCA1&t=635195625120000000");background-repeat:no-repeat;background-position:right center;padding-right:14px; }
+	#Menu1 a.dynamic { padding:2px 5px 2px 5px;text-decoration:none; }
+	#Menu1 a.static.selected { background-color:#5D7B9D;text-decoration:none; }
+	#Menu1 a.dynamic.selected { background-color:#5D7B9D;text-decoration:none; }
+	#Menu1 a.static.highlighted { color:White;background-color:#7C6F57; }
+	#Menu1 a.dynamic.highlighted { color:White;background-color:#7C6F57; }
+	/* ]]> */
+</style></head>
+<body>
+    <form method="post" action="AddMovie.aspx" onsubmit="javascript:return WebForm_OnSubmit();" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="CWhS8cVo0OLksocQanm8dfso8M5KSMjXpFJ6D2vNsnmjdp2b1wqb0BTyZVNbaYgeSrh4poxPal01cw5lk/yyvrjAYamjmmw5NwfSl2gtbdJ70bLrw5brpXiw7XRksv7cFKn8wUyQNAY6mC8g3J+7XZCGs5kns3s5qa/1y20azyC/KbDavHnqZLiJT9xskvBubToyWsWSdBsnUozgwSVmgoqXkKNIDjRzLRJrIzMSnUKoIwK3hCYtAzbJe5zKqskgAO4kyx5Q9gx/XwQLocnT3mtF6jfaWPFXTIYRLjfbo/3QUSnQmhfXvfc8gxKJWmAEARWVXB5hlvAd2q2rKegVaGimCgrydjBDVuJK0q27jnshWHTD1ap9x1cGVJLSFaMayu7JM+NuA+UghI+/2ja52OmXT805bXUm4L+8XUhW7Ch0sTGhUE2+tJ3Kqc1BH/ojeRQvBpgQSyqCPn9E4ZcOXMpeq4R9GaQTctPVj1zLO1orM//PHFkJl7MY9Wxhraym1fYcJndGq2w4Zf3HiUGDlUFMZxma9+IwF+IJjW/FiDK7Hg5bD6zl0cavJMzZ/VtGPQgDUHame+dsvWI8awgTZLgUA1K/joplOAqHB0aF84/rFtuj8pHh+kSrJ92z7SIRCKhc77DanK6YqfFJ1tZ87ygqaL5WioV23CiB2GE2/eo=" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZIgIumTho6UqSm01r0dNVudpvAw4G9qIfFUZMxtEClEd-Bq1tyclOKTs2GrQ5UQ3hA2&amp;t=635195625120000000" type="text/javascript"></script>
+
+
+<script src="/WebResource.axd?d=fqV81KWLWhVg-lLAb4IT60qE-f-MNmKuZJPxcdV3aiyawOU6VHW63JDZZXQQaFHpFUfMI7th3m2DDJ2QWb2NzN778vefVK1eZdbfYd7l4rY1&amp;t=635195625120000000" type="text/javascript"></script>
+<script src="/WebResource.axd?d=x2nkrMJGXkMELz33nwnakMl1gp2fsYlOCJ-ASpzL69yQDlJyLzR-NMEuNF68PPRw1Y9dzVGlis_xSOpIxdaFufviueV5v-WkuySaBmps-GI1&amp;t=635195625120000000" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+function WebForm_OnSubmit() {
+if (typeof(ValidatorOnSubmit) == "function" && ValidatorOnSubmit() == false) return false;
+return true;
+}
+//]]>
+</script>
+
+    <div id ="left" style="width: 121px; height: 267px; float: left;">
+        <div id="logo" style="width: 121px; height: 101px;">
+            <input type="image" name="BtnLogo" id="BtnLogo" src="pictures\movies.jpg" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;BtnLogo&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" style="height:101px;width:121px;" />
+        </div>
+        <div style="height: 168px; width: 121px; " id="Menu">
+            <input type="submit" name="btn_logon" value="Log on" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;btn_logon&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="btn_logon" style="width:117px;" />
+            <input type="submit" name="btn_createAccount" value="Create Account!" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;btn_createAccount&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="btn_createAccount" style="width:117px;" />
+            <a href="#Menu1_SkipLink" style="position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden;">Skip Navigation Links</a><div id="Menu1">
+	<ul class="level1">
+		<li><a class="level1" href="Movies.aspx">Movies</a></li><li><a class="level1" href="Actors.aspx">Actors</a></li><li><a class="level1" href="Genre.aspx">Genre</a></li><li><a class="level1" href="#" onclick="__doPostBack(&#39;Menu1&#39;,&#39;Users&#39;)">Users</a></li>
+	</ul>
+</div><a id="Menu1_SkipLink"></a>
+            
+            
+        </div>
+        </div>
+
+        <div id="right" style="float: left; width: 616px; height:268px;">
+        <div id="search" style="float: left; width: 616px; height:22px;">
+            <select name="DDSearch" id="DDSearch" style="height:22px;width:129px;">
+	<option value="Movies">Movies</option>
+	<option value="Actors">Actors</option>
+	<option value="Genre">Genre</option>
+
+</select>
+            <input name="tb_search" type="text" id="tb_search" style="width:316px;margin-left: 1px" />
+            <input type="submit" name="btn_search" value="Search" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;btn_search&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="btn_search" style="width:149px;" />
+        </div>
+        <div id="AddMovie" style="float: left; width: 616px; height:246px;">
+            <div id="label" style="float:left;">
+                <div id="Title" style="clear: both; float:left; width: 100px; padding: 3px;">
+                    <span id="lblTitle">Title:</span>
+                </div>
+                <div id="releaseDate" style="clear: both; float:left; width: 100px; padding: 3px;">
+                    <span id="lblReleaseDate">Release Date: </span>
+                </div>
+                <div id="description" style="clear: both; float:left; width: 100px; padding: 3px;">
+                    <span id="lbldescription">Description:</span>
+                </div>
+                <div id="genre" style="clear: both; float:left; width: 100px; padding: 3px;">
+                    <span id="lblgenre">Genre:</span>
+                </div>
+                <div id="prevMovie" style="clear: both; float:left; width: 100px; padding: 3px;">
+                    <span id="lblPrevMovie">Previous Movie:</span>
+                </div>
+                <div id="nextMovie" style="clear: both; float:left; width: 100px; padding: 3px;">
+                    <span id="lblNextMovie">Next Movie:</span>
+                </div>
+                <div id="age" style="clear: both; float:left; width: 100px; padding: 3px;">
+                    <span id="lblAge">Age:</span>
+                </div>
+                <div id="sex" style="clear: both; float:left; width: 100px;">
+                    <span id="lblSex">Sex:</span>
+                </div>
+                <div id="violence" style="clear: both; float:left; width: 100px;">
+                    <span id="lblViolence">Violence:</span>
+                </div>
+                <div id="fear" style="clear: both; float:left; width: 100px;">
+                    <span id="lblFear">Fear:</span>
+                </div>
+                <div id="discrimination" style="clear: both; float:left; width: 100px;">
+                    <span id="lblDiscrimination">Discrimination:</span>
+                </div>
+                <div id="drugsAlcoholAbuse" style="clear: both; float:left; width: 100px;">
+                    <span id="lblDrugsAlcoholAbuse">Drugs of Alcoholabuse:</span>
+                </div>
+                </div>
+                <div id="textbox" style="float:left; width: 350px;">
+                    <input name="tbTitle" type="text" id="tbTitle" /> <span id="RequiredFieldValidator1" style="visibility:hidden;">This textbox can not be empty</span>
+                    <input name="tbReleaseDateDay" type="text" id="tbReleaseDateDay" style="width:34px;" /> <span id="lblDateMonth">/</span>
+                    <input name="tbReleaseDateMonth" type="text" id="tbReleaseDateMonth" style="width:34px;" /><span id="lblMonthYear">/</span>
+                    <input name="tbReleaseDateYear" type="text" id="tbReleaseDateYear" style="width:34px;" /> <br />
+                    <input name="tbDescription" type="text" id="tbDescription" /> <span id="RequiredFieldValidator2" style="visibility:hidden;">This textbox can not be empty</span>
+                    <select name="DDGenre" id="DDGenre">
+	<option value="Adventure">Adventure</option>
+	<option value="Comedy">Comedy</option>
+	<option value="Drama">Drama</option>
+	<option value="Humor">Humor</option>
+
+</select> <br />
+                    <input name="tbPrevMovie" type="text" id="tbPrevMovie" /> <span id="RequiredFieldValidator4" style="visibility:hidden;">This textbox can not be empty</span>
+                    <input name="tbNextMovie" type="text" id="tbNextMovie" /> <span id="RequiredFieldValidator5" style="visibility:hidden;">This textbox can not be empty</span>
+                    <div id="radiobutton" style="float: left; width: 180px;">
+                    <div id="radiobuttonAge" style="float: left; width: 180px;">
+                        <input id="RBnone" type="radio" name="RBnone" value="RBnone" /><label for="RBnone">None</label>
+                        <input id="RBsixteen" type="radio" name="RBsixteen" value="RBsixteen" /><label for="RBsixteen">16+</label>
+                        <input id="RBeightteen" type="radio" name="RBeightteen" value="RBeightteen" /><label for="RBeightteen">18+</label>
+                    </div>
+                    <div id="radiobuttonOverig" style="float: left; width: 100px;">
+                        <div id="rbsex" style="clear: both; float:left; width: 100px; padding: 1px;">
+                        <input id="RBYesSex" type="radio" name="RBYesSex" value="RBYesSex" /><label for="RBYesSex">Yes</label>
+                        <input id="RBNoSex" type="radio" name="RBNoSex" value="RBNoSex" /><label for="RBNoSex">No</label>
+                        </div>
+                        <div id="rbviolence" style="clear: both; float:left; width: 100px; padding: 1px;">
+                        <input id="RBYesViolence" type="radio" name="RBYesViolence" value="RBYesViolence" /><label for="RBYesViolence">Yes</label>
+                        <input id="RBNoViolence" type="radio" name="RBNoViolence" value="RBNoViolence" /><label for="RBNoViolence">No</label>
+                        </div>
+                        <div id="rbfear" style="clear: both; float:left; width: 100px; padding: 1px;">
+                        <input id="RBYesFear" type="radio" name="RBYesFear" value="RBYesFear" /><label for="RBYesFear">Yes</label>
+                        <input id="RBNoFear" type="radio" name="RBNoFear" value="RBNoFear" /><label for="RBNoFear">No</label>
+                        </div>
+                        <div id="rbdiscrimination" style="clear: both; float:left; width: 100px; padding: 1px;">
+                        <input id="RBYesDiscrimination" type="radio" name="RBYesDiscrimination" value="RBYesDiscrimination" /><label for="RBYesDiscrimination">Yes</label>
+                        <input id="RBNoDiscrimination" type="radio" name="RBNoDiscrimination" value="RBNoDiscrimination" /><label for="RBNoDiscrimination">No</label>
+                        </div>
+                        <div id="rbdrugsalcohol" style="clear: both; float:left; width: 100px; padding: 1px;">
+                        <input id="RBYesDrugsAlcohol" type="radio" name="RBYesDrugsAlcohol" value="RBYesDrugsAlcohol" /><label for="RBYesDrugsAlcohol">Yes</label>
+                        <input id="RBNoDrugsAlcohol" type="radio" name="RBNoDrugsAlcohol" value="RBNoDrugsAlcohol" /><label for="RBNoDrugsAlcohol">No</label>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div id="addbutton" style="float: left; width: 450px;">
+                    <input type="submit" name="btnAdd" value="Add" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;btnAdd&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="btnAdd" style="width:450px;" />
+                </div>
+        </div>
+        </div>
+    
+<script type="text/javascript">
+//<![CDATA[
+var Page_Validators =  new Array(document.getElementById("RequiredFieldValidator1"), document.getElementById("RequiredFieldValidator2"), document.getElementById("RequiredFieldValidator4"), document.getElementById("RequiredFieldValidator5"));
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+var RequiredFieldValidator1 = document.all ? document.all["RequiredFieldValidator1"] : document.getElementById("RequiredFieldValidator1");
+RequiredFieldValidator1.controltovalidate = "tbTitle";
+RequiredFieldValidator1.errormessage = "This textbox can not be empty";
+RequiredFieldValidator1.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+RequiredFieldValidator1.initialvalue = "";
+var RequiredFieldValidator2 = document.all ? document.all["RequiredFieldValidator2"] : document.getElementById("RequiredFieldValidator2");
+RequiredFieldValidator2.controltovalidate = "tbDescription";
+RequiredFieldValidator2.errormessage = "This textbox can not be empty";
+RequiredFieldValidator2.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+RequiredFieldValidator2.initialvalue = "";
+var RequiredFieldValidator4 = document.all ? document.all["RequiredFieldValidator4"] : document.getElementById("RequiredFieldValidator4");
+RequiredFieldValidator4.controltovalidate = "tbPrevMovie";
+RequiredFieldValidator4.errormessage = "This textbox can not be empty";
+RequiredFieldValidator4.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+RequiredFieldValidator4.initialvalue = "";
+var RequiredFieldValidator5 = document.all ? document.all["RequiredFieldValidator5"] : document.getElementById("RequiredFieldValidator5");
+RequiredFieldValidator5.controltovalidate = "tbNextMovie";
+RequiredFieldValidator5.errormessage = "This textbox can not be empty";
+RequiredFieldValidator5.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+RequiredFieldValidator5.initialvalue = "";
+//]]>
+</script>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="PlHvMIkRk6utanI8XUCwBQp9fgwanRdg/myoehslRC1GD5dJJWi0TbVQY//ypcbHm/S4zukpk/20nShreoPGaPfV/QK9nsCJFkJ7woQApQi1+ZYzQEE2ihCDZErJN/t6OmDIFNJ2aacWFho+3U2XHtXq7b0zsGhUG4P+kgrN6ui0NLvj6rQrb1pbrueJkmwZBT5yQz8DjkpxSD3YKXetwElDdPNrNPXK7Qxv6oHsNvAb+0fC1vaUHxdmsT2onOX50PHQBaI/74Igmcy6DWl3pJEJJh+/Mo6X8utPcYJV3y242ZGQ2dARYTcmN8xUTz5WFRSCxnKulZAY+pcQ7CGdihNDFlUkpvsG8A88i7BzM6m26MAhWDqqSY0LjBB8X4i76I7o6OCTwtVj06IrrHQWAyNw5SQomu6NsGkjuqb3th5uV6KxvgRLgGT88rFlx/SSzHgysziAL4iVy9H7VbUAP4eECgAj4bgevnvlW25prRJXgtM1wzsW7GrwcB8+zw3kb+ooKh8051bIVAqDucUfMB4nFwMk2h+bmcaHLs5s7kZRGVE7qAd1demtFB6EFmCIsbg6AQYcnb45aB0ULcdXeP/1+odT4++FRp7EdsyL5oqN6kiPlxE0mPUIB0/9JtSN18wPPhuyiu8qA/PKzGodYeVvuqrR+T2F7xUOoEaMA1qn69TP+yLyXZ3ylubeSKgXDmxH756c0+Xkrpj9EL4ZwG9Riu7B2/5v9T+IX4BSkrKw0Z5TBs7BwVqJpU41rUUrfNux10yQhKTubhJp+yb9JT7lL4W6JWtSAO2ACnhAg4C15rVFX3aFx0CZpKw6TnNq" />
+</div>
+<script type='text/javascript'>new Sys.WebForms.Menu({ element: 'Menu1', disappearAfter: 500, orientation: 'vertical', tabIndex: 0, disabled: false });</script>
+<script type="text/javascript">
+//<![CDATA[
+
+var Page_ValidationActive = false;
+if (typeof(ValidatorOnLoad) == "function") {
+    ValidatorOnLoad();
+}
+
+function ValidatorOnSubmit() {
+    if (Page_ValidationActive) {
+        return ValidatorCommonOnSubmit();
+    }
+    else {
+        return true;
+    }
+}
+        //]]>
+</script>
+</form>
+
+<!-- Visual Studio Browser Link -->
+<script type="application/json" id="__browserLink_initializationData">
+    {"appName":"Chrome","requestId":"8da073d547814c1ca65b3c641ae4c6d0"}
+</script>
+<script type="text/javascript" src="http://localhost:1447/10f96d797e4b4b94af848318de7bbfa5/browserLink" async="async"></script>
+<!-- End Browser Link -->
+
+</body>
+</html>

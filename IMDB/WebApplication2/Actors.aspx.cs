@@ -11,8 +11,37 @@ namespace WebApplication2
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            btn_AddActor.Visible = false;
-            btn_AddMovie.Visible = false;
+            Account acc = (Account)Session["Employee"];
+            if (acc != null)
+            {
+                if (acc.Soort == "Employee")
+                {
+                    btn_AddActor.Visible = true;
+                    btn_AddMovie.Visible = true;
+                    btn_createAccount.Enabled = true;
+                }
+                else
+                {
+                    btn_AddActor.Visible = false;
+                    btn_AddMovie.Visible = false;
+                }
+            }
+            else
+            {
+                btn_AddActor.Visible = false;
+                btn_AddMovie.Visible = false;
+            }
+
+            lbActors.Items.Clear();
+            List<Actor> actors = DatabaseManager.GiveActors();
+            if (actors != null)
+            {
+                foreach (Actor actor in actors)
+                {
+                    lbActors.Items.Add(actor.Name);
+                }
+                Session["Actors"] = actors;
+            }
         }
 
         protected void btn_search_Click(object sender, EventArgs e)
@@ -31,7 +60,7 @@ namespace WebApplication2
             }
             else
             {
-                //foutmelding
+                Page.ClientScript.RegisterStartupScript(this.GetType(), "scriptkey", "<script>alert('Please select a category!');</script>");
             }
         }
 
@@ -47,17 +76,36 @@ namespace WebApplication2
 
         protected void btn_AddMovie_Click(object sender, EventArgs e)
         {
-            //todo
+            Response.Redirect("AddMovie.aspx");
         }
 
         protected void btn_AddActor_Click(object sender, EventArgs e)
         {
-            //todo
+            Response.Redirect("AddActor.aspx");
         }
 
         protected void BtnLogo_Click(object sender, ImageClickEventArgs e)
         {
             Response.Redirect("startpage.aspx");
+        }
+
+        protected void ViewActor_Click(object sender, EventArgs e)
+        {
+            if (!IsPostBack)
+            {
+                List<Actor> actors = (List<Actor>)Session["Actors"];
+                int selectedActor = (lbActors.SelectedIndex) - 1;
+                if (selectedActor >= 0)
+                {
+                    Actor a = actors[selectedActor];
+                    Session["ViewActor"] = a;
+                    Response.Redirect("ViewActor.aspx");
+                }
+                else
+                {
+                    Page.ClientScript.RegisterStartupScript(this.GetType(), "scriptkey", "<script>alert('Please select a actor!');</script>");
+                }
+            }
         }
     }
 }

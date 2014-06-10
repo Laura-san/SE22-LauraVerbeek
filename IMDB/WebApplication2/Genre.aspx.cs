@@ -11,8 +11,35 @@ namespace WebApplication2
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            btn_AddActor.Visible = false;
-            btn_AddMovie.Visible = false;
+            Account acc = (Account)Session["Employee"];
+            if (acc != null)
+            {
+                if (acc.Soort == "Employee")
+                {
+                    btn_AddActor.Visible = true;
+                    btn_AddMovie.Visible = true;
+                    btn_createAccount.Enabled = true;
+                }
+                else
+                {
+                    btn_AddActor.Visible = false;
+                    btn_AddMovie.Visible = false;
+                }
+            }
+            else
+            {
+                btn_AddActor.Visible = false;
+                btn_AddMovie.Visible = false;
+            }
+
+            List<string> genres = DatabaseManager.GiveGenres();
+            if (genres != null)
+            {
+                foreach (string genre in genres)
+                {
+                    lbGenre.Items.Add(genre);
+                }
+            }
         }
 
         protected void btn_search_Click(object sender, EventArgs e)
@@ -31,7 +58,7 @@ namespace WebApplication2
             }
             else
             {
-                //foutmelding
+                Page.ClientScript.RegisterStartupScript(this.GetType(), "scriptkey", "<script>alert('Please select a category!');</script>");
             }
         }
 
@@ -47,12 +74,12 @@ namespace WebApplication2
 
         protected void btn_AddMovie_Click(object sender, EventArgs e)
         {
-            //todo
+            Response.Redirect("AddMovie.aspx");
         }
 
         protected void btn_AddActor_Click(object sender, EventArgs e)
         {
-            //todo
+            Response.Redirect("AddActor.aspx");
         }
 
         protected void BtnLogo_Click(object sender, ImageClickEventArgs e)

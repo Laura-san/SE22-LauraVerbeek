@@ -23,7 +23,7 @@ namespace WebApplication2
             set { memberLetter = value; }
         }
 
-        public User(int accountID, string username, string password, string firstName, string lastName, DateTime dob, string email, bool letter)
+        public User(int accountID, string username, string password, string firstName, string lastName, DateTime dob, string email, bool letter, string soort)
         {
             base.AccountID = accountID;
             base.Username = username;
@@ -31,14 +31,16 @@ namespace WebApplication2
             base.FirstName = firstName;
             base.LastName = lastName;
             base.DateOfBirth = dob;
+            base.Soort = soort;
             this.email = email;
             this.memberLetter = letter;
         }
 
-        public User(string email, bool letter)
+        public User(string email, bool letter, string soort)
         {
             this.email = email;
             this.memberLetter = letter;
+            base.Soort = soort;
         }
 
         public User()
