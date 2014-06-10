@@ -1,0 +1,7 @@
+D:\Desktop\SE ontwikkelopdracht\IMDB\WebApplication2\bin\WebApplication2.dll.config
+D:\Desktop\SE ontwikkelopdracht\IMDB\WebApplication2\bin\WebApplication2.dll
+D:\Desktop\SE ontwikkelopdracht\IMDB\WebApplication2\bin\WebApplication2.pdb
+D:\Desktop\SE ontwikkelopdracht\IMDB\WebApplication2\bin\Oracle.DataAccess.dll
+D:\Desktop\SE ontwikkelopdracht\IMDB\WebApplication2\obj\Release\IMDB.csproj.ResolveComReference.cache
+D:\Desktop\SE ontwikkelopdracht\IMDB\WebApplication2\obj\Release\WebApplication2.dll
+D:\Desktop\SE ontwikkelopdracht\IMDB\WebApplication2\obj\Release\WebApplication2.pdb
