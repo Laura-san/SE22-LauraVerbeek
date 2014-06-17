@@ -66,7 +66,7 @@ namespace WebApplication2
 
         public bool changePassword(string newPassword)
         {
-            password = newPassword;
+            this.password = newPassword;
             return true;
         }
     }

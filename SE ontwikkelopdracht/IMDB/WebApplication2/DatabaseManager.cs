@@ -94,10 +94,13 @@ namespace WebApplication2
             {
                 throw;
             }
-            string query = "SELECT * FROM gebruiker WHERE gebruikersnaam = '" + UserName + "' AND wachtwoord = '" + Password + "'";
+            string query = "SELECT * FROM gebruiker WHERE gebruikersnaam = ':username' AND wachtwoord = ':password'";
             OracleCommand command = new OracleCommand(query, connection);
             command.CommandType = CommandType.Text;
             OracleDataReader dataReader;
+
+            command.Parameters.Add(new OracleParameter(":username", UserName));
+            command.Parameters.Add(new OracleParameter(":password", Password));
 
             Account acc = null;
             int UserID = -1;
@@ -256,24 +259,26 @@ namespace WebApplication2
             {
                 throw;
             }
+
             string releasedate = movie.ReleaseDate.Day + "/" + movie.ReleaseDate.Month + "/" + movie.ReleaseDate.Year;
-            string query = "INSERT INTO FILM VALUES('" + movie.MovieID + "', ':movieTitl', (TO_DATE('" + releasedate + "', 'dd/mm/yy')), ':description', ':genre', ':prev', ':next', ':age', ':sex', ':violence', ':fear', ':discrimination', ':drugsAlcoholAbuse')";
+            string query = "INSERT INTO FILM VALUES('" + movie.MovieID + "', ':movieTitle', (TO_DATE('" + releasedate + "', 'dd/mm/yy')), ':description', '" + movie.Genre + "', ':prev', ':next', ':age', ':sex', ':violence', ':fear', ':discrimination', ':drugsAlcoholAbuse')";
             OracleCommand command = new OracleCommand(query, connection);
             command.CommandType = CommandType.Text;
             OracleDataReader dataReader;
-
+            
             command.Parameters.Add(new OracleParameter(":movieTitle", movie.Title));
             command.Parameters.Add(new OracleParameter(":releaseDate", releasedate));
             command.Parameters.Add(new OracleParameter(":description", movie.Description));
-            command.Parameters.Add(new OracleParameter(":genre", movie.Genre));
-            command.Parameters.Add(new OracleParameter(":prev", movie.PrevMovie));
-            command.Parameters.Add(new OracleParameter(":next", movie.NextMovie));
+            command.Parameters.Add(new OracleParameter(":prev", movie.PrevMovie.Title));
+            command.Parameters.Add(new OracleParameter(":next", movie.NextMovie.Title));
             command.Parameters.Add(new OracleParameter(":age", movie.Age));
-            command.Parameters.Add(new OracleParameter(":sex", movie.Sex));
-            command.Parameters.Add(new OracleParameter(":violence", movie.Violence));
-            command.Parameters.Add(new OracleParameter(":fear", movie.Fear));
-            command.Parameters.Add(new OracleParameter(":discrimination", movie.Discrimination));
-            command.Parameters.Add(new OracleParameter(":drugsAlcoholAbuse", movie.DrugsAlcoholAbuse));
+            command.Parameters.Add(new OracleParameter(":sex", Convert.ToString(movie.Sex)));
+            command.Parameters.Add(new OracleParameter(":violence", Convert.ToString(movie.Violence)));
+            command.Parameters.Add(new OracleParameter(":fear", Convert.ToString(movie.Fear)));
+            command.Parameters.Add(new OracleParameter(":discrimination", Convert.ToString(movie.Discrimination)));
+            command.Parameters.Add(new OracleParameter(":drugsAlcoholAbuse", Convert.ToString(movie.DrugsAlcoholAbuse)));
+
+            
 
             try
             {
@@ -357,6 +362,15 @@ namespace WebApplication2
 
         public static int GiveMovieIDFromTitle(string title)
         {
+            try
+            {
+                OpeningAConnection();
+            }
+            catch
+            {
+                throw;
+            }
+
             string query = "SELECT FILMID FROM FILM WHERE TITEL = ':title'";
             OracleCommand command = new OracleCommand(query, connection);
             command.CommandType = CommandType.Text;
@@ -369,11 +383,18 @@ namespace WebApplication2
             try
             {
                 dataReader = command.ExecuteReader();
-                movieID = Convert.ToInt32(dataReader["FilmID"]);
+                while (dataReader.Read())
+                {
+                    movieID = Convert.ToInt32(dataReader["FILMID"]);
+                }
             }
             catch (Exception e)
             {
                 throw e;
+            }
+            finally
+            {
+                connection.Close();
             }
             
             return movieID;
@@ -421,11 +442,27 @@ namespace WebApplication2
                     //prev = (Movie)dataReader["VORIGEFILM"];
                     //next = (Movie)dataReader["VOLGENDEFILM"];
                     age = Convert.ToString(dataReader["LEEFTIJDGRENS"]);
-                    sex = Convert.ToBoolean(dataReader["SEX"]);
-                    violence = Convert.ToBoolean(dataReader["GEWELD"]);
-                    fear = Convert.ToBoolean(dataReader["ANGST"]);
-                    discrimination = Convert.ToBoolean(dataReader["DISCRIMINATIE"]);
-                    drugsAlcoholAbuse = Convert.ToBoolean(dataReader["DRUGALCOHOLGEBRUIK"]);
+
+                    if (dataReader["SEX"] == "true")
+                    {
+                        sex = true;
+                    }
+                    if (dataReader["GEWELD"] == "true")
+                    {
+                        violence = true;
+                    }
+                    if (dataReader["ANGST"] == "true")
+                    {
+                        fear = true;
+                    }
+                    if (dataReader["DISCRIMINATIE"] == "true")
+                    {
+                        discrimination = true;
+                    }
+                    if (dataReader["DRUGALCOHOLGEBRUIK"] == "true")
+                    {
+                        drugsAlcoholAbuse = true;
+                    }
 
                     if (Convert.ToString(dataReader["GENRE"]) == "Adventure")
                     {

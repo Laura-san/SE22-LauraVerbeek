@@ -1,0 +1,11 @@
+Database:
+- AddActor
+- GetFilmography
+- GetActorID
+- GetMovieID
+- GetPrevMovie
+
+- GetMovies
+- GetActors
+- GetGenre
+- Zoekfunctie

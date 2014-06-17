@@ -1,0 +1,9 @@
+D:\Desktop\SE ontwikkelopdracht\IMDB\UnitTestProject1\bin\Debug\UnitTestProject1.dll
+D:\Desktop\SE ontwikkelopdracht\IMDB\UnitTestProject1\bin\Debug\UnitTestProject1.pdb
+D:\Desktop\SE ontwikkelopdracht\IMDB\UnitTestProject1\bin\Debug\WebApplication2.dll
+D:\Desktop\SE ontwikkelopdracht\IMDB\UnitTestProject1\bin\Debug\Oracle.DataAccess.dll
+D:\Desktop\SE ontwikkelopdracht\IMDB\UnitTestProject1\bin\Debug\WebApplication2.pdb
+D:\Desktop\SE ontwikkelopdracht\IMDB\UnitTestProject1\obj\Debug\UnitTestProject1.csprojResolveAssemblyReference.cache
+D:\Desktop\SE ontwikkelopdracht\IMDB\UnitTestProject1\obj\Debug\UnitTestProject1.dll
+D:\Desktop\SE ontwikkelopdracht\IMDB\UnitTestProject1\obj\Debug\UnitTestProject1.pdb
+D:\Desktop\SE ontwikkelopdracht\IMDB\UnitTestProject1\bin\Debug\UnitTestProject1.dll.config

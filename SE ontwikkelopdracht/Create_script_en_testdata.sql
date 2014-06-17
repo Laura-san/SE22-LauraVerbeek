@@ -32,12 +32,12 @@ omschrijving        varchar2(350),
 genre               varchar2(100),
 vorigeFilm          varchar2(100),
 volgendeFilm        varchar2(100),
-leeftijdgrens       varchar2(3)     CHECK(leeftijdgrens=null or leeftijdgrens='16+' or leeftijdgrens='18+'),
-sex                 varchar2(5)     NOT NULL      CHECK(sex='True' or sex='False'),
-geweld              varchar2(5)     NOT NULL      CHECK(geweld='True' or geweld='False'),
-discriminatie       varchar2(5)     NOT NULL      CHECK(discriminatie='True' or discriminatie='False'),
-drugAlcoholGebruik  varchar2(5)     NOT NULL      CHECK(drugAlcoholGebruik='True' or drugAlcoholGebruik='False'),
-angst               varchar2(5)     NOT NULL      CHECK(angst='True' or angst='False'));
+leeftijdgrens       varchar2(4)     CHECK(leeftijdgrens=null or leeftijdgrens='16+' or leeftijdgrens='18+'),
+sex                 varchar2(5)     NOT NULL,
+geweld              varchar2(9)     NOT NULL,
+discriminatie       varchar2(5)     NOT NULL,
+drugAlcoholGebruik  varchar2(15)    NOT NULL,
+angst               varchar2(19)    NOT NULL);
 
 CREATE TABLE filmserie
 (filmA  number(10),
